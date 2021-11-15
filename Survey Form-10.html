@@ -1,0 +1,169 @@
+
+<!--Prove background-image  10   Funzionante -->   
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<style>
+body {
+  ackground-color: lightblue;
+  background-image: url("https://www.settemuse.it/sfondi_artistici/opere_arte/opere_arte_003.jpg");
+  }
+  
+#alpha {
+height: 120px;
+ackground-color: lightsalmon;
+width=80%;
+}
+#title { 
+  color: blue;
+  text-align: center;
+}
+
+#description {
+  font-family: verdana;
+  font-size: 15px;
+  text-align: center;
+  color: crimson;
+ }
+
+#beta {
+background-color: teal;
+color: white;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+}
+
+#survey-form{
+
+margin-left: 200px;
+
+}
+  
+  
+</style>
+</head>
+
+
+<body>
+
+<div id="alpha">
+<h1 id="title"> The Painter Network </h1>
+<p id="description">The place for Drawing and Painting lovers .</p>
+</div>
+
+
+<div id="beta">
+
+
+<!-- Input    -->
+
+<form id="survey-form">
+
+<label for"text" id="name-label">Name: </label><br>
+<input type="text" id="name"  required placeholder="Enter your Name"> <br><br>
+
+<label for"email" id="email-label">Email:</label><br>
+<input type="email" id="email" placeholder="Type your email address" required><br><br>
+
+<label for"number" id="number-label">Your Age:</label><br>
+<input type="number" id="number"  placeholder="Number only please"
+min="10" max="100" required><br><br>
+
+
+
+
+
+<!-- Dropdown  -->
+
+<label for="painting-style" id="dropdown"> Your Painting Style:</label><br>
+<select name="painting-style" id="dropdown">
+<option value="red">Realism</option>
+<option value="blue">Painterly</option>
+<option value="green">Impressionism</option>
+<option value="red">Expressionism and Fauvism</option>
+<option value="blue">Abstractism</option>
+<option value="green">Photorealism</option>
+<br> <br>
+</select>
+<br>
+<br>
+
+
+
+<!-- Radio Button -->
+
+<p>Your Subject:</p>
+<label for= "styles"> Landscapes
+<input type="radio" id="landscapes" name="styles" value="Lanscapes">
+</label> 
+<br>
+
+<label for= "styles">Portraits
+<input type="radio" id="portraits" name="styles" value="Portraits">
+</label>
+<br>
+
+<label for= "styles">Still Life
+ <input type="radio" id="still-life" name="styles" value="Still Life">
+</label> 
+<br>
+<br>
+
+
+
+<!--  Checkbox   -->
+
+<p>Your palette:</p>
+<label for="white">
+<input id="white" type="checkbox" name="colorname" value="Titanium"> Titanium White</label>
+
+<br>   
+
+<label for="blue">
+<input id="blue" type="checkbox" name="colorname" value="Ultramarine Blue" > Ultramarine Blue</label>
+
+<br>
+
+<label for="teal">
+<input id="teal" type="checkbox" name="colorname" value="Cobalt Teal"> Cobalt Teal</label>
+
+<br>
+
+
+<label for="yellow">
+<input id="yellow" type="checkbox" name="colorname" value="Primary or Hansa Yellow"> Primary- or Hansa Yellow</label>
+
+<br> 
+
+<label for="red">
+<input id="red" type="checkbox" name="colorname" value="Cadmium Red Light" > Cadmium Red light</label>
+
+<br>
+
+<label for="crimson">
+<input id="crimson" type="checkbox" name="colorname"value="Alizarine" > Alizarine Crimson</label>
+
+<br>
+
+<label for="black">
+<input id="black" type="checkbox" name="colorname" value="Carbon Black" > Carbon Black</label>
+
+<br>
+<br>
+
+
+
+<!-- Text Area   -->
+
+<p>Please, let us know what what painting books would you like to get</p>
+<textarea name="message" rows="10" cols="30"></textarea>
+  <br><br>
+  <input type="submit" id="submit" value="Send">
+</div> 
+
+</body>
+</html>
